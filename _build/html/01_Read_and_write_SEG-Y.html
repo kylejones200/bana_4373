@@ -1,0 +1,831 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>x lines of Python &#8212; My sample book</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/01_Read_and_write_SEG-Y.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2F01_Read_and_write_SEG-Y.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/01_Read_and_write_SEG-Y.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   x lines of Python
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#read-seg-y-with-obspy">
+   Read SEG-Y with
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     obspy
+    </span>
+   </code>
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#let-s-begin">
+     Let’s begin!
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tip-you-can-run-a-code-block-by-selecting-it-click-in-it-then-pressing-shift-enter">
+     Tip: you can run a code block by selecting it (click in it), then pressing Shift-Enter.
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#d-data">
+     2D data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#read-the-file-headers">
+     Read the file headers
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#look-at-traces">
+     Look at traces
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#write-data">
+     Write data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#validate-what-we-did">
+     Validate what we did
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="x-lines-of-python">
+<h1>x lines of Python<a class="headerlink" href="#x-lines-of-python" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="read-seg-y-with-obspy">
+<h1>Read SEG-Y with <code class="docutils literal notranslate"><span class="pre">obspy</span></code><a class="headerlink" href="#read-seg-y-with-obspy" title="Permalink to this headline">¶</a></h1>
+<p><strong>This notebook goes with <a class="reference external" href="http://ageo.co/xlines01">a blog post at Agile*</a>.</strong></p>
+<p>Before going any further, you might like to know, <a class="reference external" href="http://www.agilegeoscience.com/blog/2014/3/26/what-is-seg-y.html">What is SEG-Y?</a>. See also the articles in <a class="reference external" href="http://www.subsurfwiki.org/wiki/SEG_Y">SubSurfWiki</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/SEG_Y">Wikipedia</a>.</p>
+<p>We’d like to read, alter, and write a SEG-Y file. We’ll use the <a class="reference external" href="https://github.com/obspy/obspy">obspy</a> seismology library to read and write SEG-Y data.</p>
+<p>Technical SEG-Y documentation:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://seg.org/Portals/0/SEG/News%20and%20Resources/Technical%20Standards/seg_y_rev1.pdf">SEG-Y Rev 1</a></p></li>
+<li><p><a class="reference external" href="https://www.dropbox.com/s/txrqsfuwo59fjea/SEG-Y%20Rev%202.0%20Draft%20August%202015.pdf?dl=0">SEG-Y Rev 2 proposal</a> and <a class="reference external" href="http://community.seg.org/web/technical-standards-committee/documents/-/document_library/view/6062543">draft repo</a></p></li>
+</ul>
+<hr />
+<div class="section" id="let-s-begin">
+<h2>Let’s begin!<a class="headerlink" href="#let-s-begin" title="Permalink to this headline">¶</a></h2>
+<p>The 2D seismic line in this post is from the <a class="reference external" href="http://energy.usgs.gov/GeochemistryGeophysics/SeismicDataProcessingInterpretation/NPRASeismicDataArchive.aspx">USGS NPRA Seismic Data Archive</a>, and are in the public domain. This is line number 3X_75_PR.</p>
+<p>First, some preliminaries:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="tip-you-can-run-a-code-block-by-selecting-it-click-in-it-then-pressing-shift-enter">
+<h2>Tip: you can run a code block by selecting it (click in it), then pressing Shift-Enter.<a class="headerlink" href="#tip-you-can-run-a-code-block-by-selecting-it-click-in-it-then-pressing-shift-enter" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="d-data">
+<h2>2D data<a class="headerlink" href="#d-data" title="Permalink to this headline">¶</a></h2>
+<p>ObsPy is really meant for earthquake data, so tends to ‘think’ in terms of timeseries, as opposed to volumes or 2D lines. It’s worth bearing this in mind.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">headonly=True</span></code> option tells ObsPy only to read the header information, but not the traces. This is much faster than reading traces if the file is large. When you access the trace data, ObsPy will go and fetch them from the file.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">obspy.io.segy.segy</span> <span class="k">import</span> <span class="n">_read_segy</span>
+
+<span class="n">stream</span> <span class="o">=</span> <span class="n">_read_segy</span><span class="p">(</span><span class="s1">&#39;../data/3X_75_PR.SGY&#39;</span><span class="p">,</span> <span class="n">headonly</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="n">f22874b059ba</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">obspy.io.segy.segy</span> <span class="kn">import</span> <span class="n">_read_segy</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">stream</span> <span class="o">=</span> <span class="n">_read_segy</span><span class="p">(</span><span class="s1">&#39;../data/3X_75_PR.SGY&#39;</span><span class="p">,</span> <span class="n">headonly</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+<span class="nn">/opt/anaconda3/lib/python3.7/site-packages/obspy/io/segy/segy.py</span> in <span class="ni">_read_segy</span><span class="nt">(file, endian, textual_header_encoding, unpack_headers, headonly)</span>
+<span class="g g-Whitespace">    </span><span class="mi">946</span>     <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="s1">&#39;read&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="s1">&#39;tell&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> \
+<span class="g g-Whitespace">    </span><span class="mi">947</span>             <span class="nb">hasattr</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="s1">&#39;seek&#39;</span><span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">948</span>         <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="nb">file</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">open_file</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">949</span>             <span class="k">return</span> <span class="n">_internal_read_segy</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">950</span>                 <span class="n">open_file</span><span class="p">,</span> <span class="n">endian</span><span class="o">=</span><span class="n">endian</span><span class="p">,</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;../data/3X_75_PR.SGY&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stream</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1592 traces in the SEG Y structure.
+</pre></div>
+</div>
+</div>
+</div>
+<p>When we load a 2D line, the stream looks like a list of ObsPy <code class="docutils literal notranslate"><span class="pre">Trace</span></code> objects (even though we didn’t actually load the data yet, because of <code class="docutils literal notranslate"><span class="pre">headonly=True</span></code>). We can treat it like any other sequence. For example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">one_trace</span> <span class="o">=</span> <span class="n">stream</span><span class="o">.</span><span class="n">traces</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">one_trace</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/01_Read_and_write_SEG-Y_8_0.png" src="_images/01_Read_and_write_SEG-Y_8_0.png" />
+</div>
+</div>
+<p>We’ll get the data from every trace and put it into a NumPy array for ease of manipulation.</p>
+<p>The <a class="reference external" href="https://docs.python.org/3/reference/expressions.html#generator-expressions">generator expression</a> steps over every trace in <code class="docutils literal notranslate"><span class="pre">stream.traces</span></code> and gets its <code class="docutils literal notranslate"><span class="pre">data</span></code>, and then sends the data to <code class="docutils literal notranslate"><span class="pre">np.stack</span></code> which stacks them into an array.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">data</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">stream</span><span class="o">.</span><span class="n">traces</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">shape</span>  <span class="c1"># traces, time samples</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1592, 751)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we can have a look at what we got using <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot.imshow</span></code>, a handy way to treat a 2D array as an image. First let’s get the 99th percentile of the amplitudes, to help scale the visualization (if we don’t we often get what looks like a blank section).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vm</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">99</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The 99th percentile is </span><span class="si">{:.0f}</span><span class="s2">; the max amplitude is </span><span class="si">{:.0f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">vm</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">max</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The 99th percentile is 1802; the max amplitude is 1091224
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we can make the plot. Notice that we have to transpose the array to plot it like this. The reason is that we’re storing things with traces in the first dimension (‘rows’ if you like), for convenience. This way <code class="docutils literal notranslate"><span class="pre">data[0]</span></code> refers to the first trace, not the first time sample. But <code class="docutils literal notranslate"><span class="pre">imshow</span></code> assumes that we’re looking at a sort of image, with rows going across the image.</p>
+<p>I’ll include this in the <em>x</em> lines, because I think it’s an important QC step at this point.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Greys&quot;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="n">vm</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">vm</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.image.AxesImage at 0x7fe3fce075f8&gt;
+</pre></div>
+</div>
+<img alt="_images/01_Read_and_write_SEG-Y_15_1.png" src="_images/01_Read_and_write_SEG-Y_15_1.png" />
+</div>
+</div>
+<p>Only 4 lines of Python and we already have a display!</p>
+<p>We can make an even nicer plot quite easily.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;RdBu&quot;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=-</span><span class="n">vm</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">vm</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/01_Read_and_write_SEG-Y_17_0.png" src="_images/01_Read_and_write_SEG-Y_17_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="read-the-file-headers">
+<h2>Read the file headers<a class="headerlink" href="#read-the-file-headers" title="Permalink to this headline">¶</a></h2>
+<p>We can try to read the text header, using <code class="docutils literal notranslate"><span class="pre">decode</span></code> to turn it from bytes into a regular Python string, but it contains no line breaks.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If you get nonsense here, the header is probably EBCDIC encoded.</span>
+<span class="c1"># In that case pass ``encoding=&#39;cp037&#39;`` to ``decode``.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">stream</span><span class="o">.</span><span class="n">textual_file_header</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C   CLIENT/JOB ID    0 5 5 5 2 9 3 4 7 2                                        C   LINE  L3X                                                                   C   REEL NO 751023083601   DAY-START OF REEL  23       YEAR 1975                C   INSTRUMENT: MFG TI          MODEL ASC                                       C   DATA TRACES/RECORD0001      AUXILIARY TRACES/RECORD 0       CDP FOLD  0001  C SAMPLE INTERNAL 0000008000 US  SAMPLES/TRACE  0751BITS/IN 1600 BYTES/SAMPLE 4 C   RECORDING FORMAT  STDI              FORMAT THIS REEL SEG Y1                 C   SAMPLE CODE: FLOATING PT                                                    C   GAIN TYPE:   FLOATING PT                                                    C                                                                               C                                                                               C                                                                               C                                                                               C                                                                               C                                                                               C                                                                               C                                                                               C                                                                               C                                                                               C                                                                               C   PROCESSING:                                                                 C   PROCESSING:                                                                 C   FIELD TAPE PROCESSING MACHINE NUMBER IS:    TIMAP2                          C   INPUT TAPE FORMAT IS :          STDI                                        C   TMIN REQUESTED THIS REEL  00000000      TMAX REQUESTED THIS REEL  00006000  C   INITIAL CHANNEL REQUESTED   0001    NUMBER OF CHANNELS REQUESTED  0001      C   DELTA 0008 MILLIVOLT LEVEL  000000  TYPE INPUT  0001                        C   TRACE HEADER INFORMATION BY BYTE :                                          C   BYTES 181-182 : TMIN THIS TRACE         BYTES 183-184 : TMAX THIS TRACE     C   BYTES 185-186 : TRACE FLAG  1= GOOD     2 = MISSING OR DEAD TRACE INPUT     C   3= REQUESTED DUMMY TRACE                BYTES 187-188 : TDS THIS TRACE      C BYTES 189-192 : WATER DEPTH AT CDP    BYTES 193-196 : PRENMO DATUM CORR MS T  C BYTES 197-200 : POSTNMO DATUM CORR MS T                                       C BYTES 201-204 : DATUM TIME -- TIME TO WHICH TRACES HAVE BEEN CORRECTED        C BYTES 205-208 : DATUM VELOCITY   - TO WHICH TRACES HAVE BEEN CORRECTED        C                                                                               C BINARY TAPE HEADER IDENTIFICATION :    JOB ID -  32 BIT FIXED POINT           C REEL ID- 32 BIT PACKED BINARY BASE 10 BYTES 1-4 JOB ID  BYTES 5-8 REEL ID     C BYTES 95-96 SDOM: 0=SPC, 1= CDP                                               C END PROCESSING:                                                               
+</pre></div>
+</div>
+</div>
+</div>
+<p>Usually it’s meant to be read with linebreaks, so let’s use a bit of a hack to ‘reshape’ it into 40 lines of 80 characters:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">stream</span><span class="o">.</span><span class="n">textual_file_header</span><span class="o">.</span><span class="n">decode</span><span class="p">()))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">row</span><span class="p">)</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">40</span><span class="p">,</span> <span class="mi">80</span><span class="p">))))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C   CLIENT/JOB ID    0 5 5 5 2 9 3 4 7 2                                        
+C   LINE  L3X                                                                   
+C   REEL NO 751023083601   DAY-START OF REEL  23       YEAR 1975                
+C   INSTRUMENT: MFG TI          MODEL ASC                                       
+C   DATA TRACES/RECORD0001      AUXILIARY TRACES/RECORD 0       CDP FOLD  0001  
+C SAMPLE INTERNAL 0000008000 US  SAMPLES/TRACE  0751BITS/IN 1600 BYTES/SAMPLE 4 
+C   RECORDING FORMAT  STDI              FORMAT THIS REEL SEG Y1                 
+C   SAMPLE CODE: FLOATING PT                                                    
+C   GAIN TYPE:   FLOATING PT                                                    
+C                                                                               
+C                                                                               
+C                                                                               
+C                                                                               
+C                                                                               
+C                                                                               
+C                                                                               
+C                                                                               
+C                                                                               
+C                                                                               
+C                                                                               
+C   PROCESSING:                                                                 
+C   PROCESSING:                                                                 
+C   FIELD TAPE PROCESSING MACHINE NUMBER IS:    TIMAP2                          
+C   INPUT TAPE FORMAT IS :          STDI                                        
+C   TMIN REQUESTED THIS REEL  00000000      TMAX REQUESTED THIS REEL  00006000  
+C   INITIAL CHANNEL REQUESTED   0001    NUMBER OF CHANNELS REQUESTED  0001      
+C   DELTA 0008 MILLIVOLT LEVEL  000000  TYPE INPUT  0001                        
+C   TRACE HEADER INFORMATION BY BYTE :                                          
+C   BYTES 181-182 : TMIN THIS TRACE         BYTES 183-184 : TMAX THIS TRACE     
+C   BYTES 185-186 : TRACE FLAG  1= GOOD     2 = MISSING OR DEAD TRACE INPUT     
+C   3= REQUESTED DUMMY TRACE                BYTES 187-188 : TDS THIS TRACE      
+C BYTES 189-192 : WATER DEPTH AT CDP    BYTES 193-196 : PRENMO DATUM CORR MS T  
+C BYTES 197-200 : POSTNMO DATUM CORR MS T                                       
+C BYTES 201-204 : DATUM TIME -- TIME TO WHICH TRACES HAVE BEEN CORRECTED        
+C BYTES 205-208 : DATUM VELOCITY   - TO WHICH TRACES HAVE BEEN CORRECTED        
+C                                                                               
+C BINARY TAPE HEADER IDENTIFICATION :    JOB ID -  32 BIT FIXED POINT           
+C REEL ID- 32 BIT PACKED BINARY BASE 10 BYTES 1-4 JOB ID  BYTES 5-8 REEL ID     
+C BYTES 95-96 SDOM: 0=SPC, 1= CDP                                               
+C END PROCESSING:                                                               
+</pre></div>
+</div>
+</div>
+</div>
+<p>Weirdly, the binary file header is easier to read:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">stream</span><span class="o">.</span><span class="n">binary_file_header</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Binary File Header:
+	job_identification_number: 1110580000
+	line_number: 3
+	reel_number: 1110579969
+	number_of_data_traces_per_ensemble: 1
+	number_of_auxiliary_traces_per_ensemble: 0
+	sample_interval_in_microseconds: 8000
+	sample_interval_in_microseconds_of_original_field_recording: 0
+	number_of_samples_per_data_trace: 751
+	number_of_samples_per_data_trace_for_original_field_recording: 0
+	data_sample_format_code: 1
+	ensemble_fold: 1
+	trace_sorting_code: 4
+	vertical_sum_code: 1
+	sweep_frequency_at_start: 0
+	sweep_frequency_at_end: 0
+	sweep_length: 0
+	sweep_type_code: 0
+	trace_number_of_sweep_channel: 0
+	sweep_trace_taper_length_in_ms_at_start: 0
+	sweep_trace_taper_length_in_ms_at_end: 0
+	taper_type: 0
+	correlated_data_traces: 0
+	binary_gain_recovered: 1
+	amplitude_recovery_method: 4
+	measurement_system: 0
+	impulse_signal_polarity: 0
+	vibratory_polarity_code: 0
+	unassigned_1: b&#39;\xff\xfe\x00\x0c\x00\x01\x00\x00\x17p\x00\x01\x00\x01\x00\x08\x0c\x80\x00\x80\x00\x00\x00\x9b\x00\x02\x00\x9f\x00\x02\x00\x01\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00&#39;
+	seg_y_format_revision_number: 0
+	fixed_length_trace_flag: 0
+	number_of_3200_byte_ext_file_header_records_following: 0
+	unassigned_2: b&#39;\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="look-at-traces">
+<h2>Look at traces<a class="headerlink" href="#look-at-traces" title="Permalink to this headline">¶</a></h2>
+<p>Since we’re looking at headers, let’s look at the header of the first trace:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">stream</span><span class="o">.</span><span class="n">traces</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">header</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>trace_sequence_number_within_line: 1
+trace_sequence_number_within_segy_file: 1
+original_field_record_number: 11
+trace_number_within_the_original_field_record: 0
+energy_source_point_number: 0
+ensemble_number: 1
+trace_number_within_the_ensemble: 1
+trace_identification_code: 1
+number_of_vertically_summed_traces_yielding_this_trace: 1
+number_of_horizontally_stacked_traces_yielding_this_trace: 1
+data_use: 1
+distance_from_center_of_the_source_point_to_the_center_of_the_receiver_group: 0
+receiver_group_elevation: 0
+surface_elevation_at_source: 0
+source_depth_below_surface: 0
+datum_elevation_at_receiver_group: 0
+datum_elevation_at_source: 0
+water_depth_at_source: 0
+water_depth_at_group: 0
+scalar_to_be_applied_to_all_elevations_and_depths: 0
+scalar_to_be_applied_to_all_coordinates: 1
+source_coordinate_x: 0
+source_coordinate_y: 0
+group_coordinate_x: 0
+group_coordinate_y: 0
+coordinate_units: 0
+weathering_velocity: 0
+subweathering_velocity: 0
+uphole_time_at_source_in_ms: 0
+uphole_time_at_group_in_ms: 0
+source_static_correction_in_ms: 0
+group_static_correction_in_ms: 0
+total_static_applied_in_ms: 0
+lag_time_A: 0
+lag_time_B: 0
+delay_recording_time: 0
+mute_time_start_time_in_ms: 0
+mute_time_end_time_in_ms: 0
+number_of_samples_in_this_trace: 751
+sample_interval_in_ms_for_this_trace: 8000
+gain_type_of_field_instruments: 0
+instrument_gain_constant: 0
+instrument_early_or_initial_gain: 0
+correlated: 0
+sweep_frequency_at_start: 0
+sweep_frequency_at_end: 0
+sweep_length_in_ms: 0
+sweep_type: 0
+sweep_trace_taper_length_at_start_in_ms: 0
+sweep_trace_taper_length_at_end_in_ms: 0
+taper_type: 0
+alias_filter_frequency: 0
+alias_filter_slope: 0
+notch_filter_frequency: 0
+notch_filter_slope: 0
+low_cut_frequency: 0
+high_cut_frequency: 0
+low_cut_slope: 0
+high_cut_slope: 0
+year_data_recorded: 16
+day_of_year: 35
+hour_of_day: 8
+minute_of_hour: 54
+second_of_minute: 1
+time_basis_code: 1
+trace_weighting_factor: 10
+geophone_group_number_of_roll_switch_position_one: 0
+geophone_group_number_of_trace_number_one: 0
+geophone_group_number_of_last_trace: 0
+gap_size: 0
+over_travel_associated_with_taper: 0
+x_coordinate_of_ensemble_position_of_this_trace: 6000
+y_coordinate_of_ensemble_position_of_this_trace: 65536
+for_3d_poststack_data_this_field_is_for_in_line_number: 0
+for_3d_poststack_data_this_field_is_for_cross_line_number: 0
+shotpoint_number: 0
+scalar_to_be_applied_to_the_shotpoint_number: 0
+trace_value_measurement_unit: 84
+transduction_constant_mantissa: 10000
+transduction_constant_exponent: 0
+transduction_units: 0
+device_trace_identifier: 0
+scalar_to_be_applied_to_times: 0
+source_type_orientation: 0
+source_energy_direction_mantissa: 0
+source_energy_direction_exponent: 0
+source_measurement_mantissa: 0
+source_measurement_exponent: 0
+source_measurement_unit: 0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Check what various fields look like:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">t</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">trace_sequence_number_within_segy_file</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">stream</span><span class="o">.</span><span class="n">traces</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/01_Read_and_write_SEG-Y_27_0.png" src="_images/01_Read_and_write_SEG-Y_27_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="write-data">
+<h2>Write data<a class="headerlink" href="#write-data" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">obspy.core</span> <span class="k">import</span> <span class="n">AttribDict</span>
+<span class="kn">from</span> <span class="nn">obspy.core</span> <span class="k">import</span> <span class="n">Stats</span>
+
+<span class="kn">from</span> <span class="nn">obspy.core</span> <span class="k">import</span> <span class="n">Trace</span><span class="p">,</span> <span class="n">Stream</span>
+<span class="kn">from</span> <span class="nn">obspy.io.segy.segy</span> <span class="k">import</span> <span class="n">SEGYBinaryFileHeader</span>
+<span class="kn">from</span> <span class="nn">obspy.io.segy.segy</span> <span class="k">import</span> <span class="n">SEGYTraceHeader</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s make a change to the trace data, and save it as a new SEG-Y file.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">bruges</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dt</span> <span class="o">=</span> <span class="n">stream</span><span class="o">.</span><span class="n">traces</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">header</span><span class="o">.</span><span class="n">sample_interval_in_ms_for_this_trace</span> <span class="o">/</span> <span class="mf">1e6</span>
+<span class="n">similarity</span> <span class="o">=</span> <span class="n">bruges</span><span class="o">.</span><span class="n">attribute</span><span class="o">.</span><span class="n">similarity</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mf">0.16</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">similarity</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;viridis&quot;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/01_Read_and_write_SEG-Y_33_0.png" src="_images/01_Read_and_write_SEG-Y_33_0.png" />
+</div>
+</div>
+<p>Now we have something worth writing (OK, maybe not, this section is pretty boring, but whatever, you get the idea). We make a new <code class="docutils literal notranslate"><span class="pre">Stream</span></code> object from a sequence of <code class="docutils literal notranslate"><span class="pre">Trace</span></code> objects, putting their sample intervals in the headers — a requirement of ObsPy.</p>
+<p>This might seem really terse, but I’m on a budget :) It’s basically the same as this long-hand, annotated Python, using <code class="docutils literal notranslate"><span class="pre">t</span></code> for ‘a trace-like 1D array from my NumPy array’ and <code class="docutils literal notranslate"><span class="pre">trace</span></code> for ‘an ObsPy <code class="docutils literal notranslate"><span class="pre">Trace</span></code> object:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>out = Stream()                      # Make a new Stream object, basically an empty list-like thing.
+for t in similarity:                # Loop over all trace-like things in the similarity array.
+    header = {&#39;delta&#39;: dt}          # Make a header for the trace; ObsPy needs this.
+    trace = Trace(t, header=header) # Make the ObsPy Trace with the data and the header.
+    out.append(trace)               # Append the Trace to the Stream.
+</pre></div>
+</div>
+<p>This short-hand form is called a generator expression, one of the most useful bits of Python there is. It does exactly the same thing.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out</span> <span class="o">=</span> <span class="n">Stream</span><span class="p">(</span><span class="n">Trace</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">delta</span><span class="o">=</span><span class="n">dt</span><span class="p">))</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">similarity</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We should add some info to the header, which can contain up to 40 lines of 80 characters. We’ll start by recycling the first ten lines of the existing header:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out</span><span class="o">.</span><span class="n">stats</span> <span class="o">=</span> <span class="n">Stats</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">textual_file_header</span><span class="o">=</span><span class="n">stream</span><span class="o">.</span><span class="n">textual_file_header</span><span class="p">[:</span><span class="mi">800</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we can add to it:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">textual_file_header</span> <span class="o">+=</span> <span class="s2">&quot;&quot;&quot;Similarity volume.</span>
+<span class="s2">Generated: 18 Sep 2016 by Matt Hall matt@agilegeoscience.com.</span>
+<span class="s2">Algorithm: github.com/agile-geoscience/bruges.attribute.similarity.</span>
+<span class="s2">Parameters: duration=0.16 s, dt=0.008 s.&quot;&quot;&quot;</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>And then write the file (there’s a warning about ObsPy having to create the trace headers. We could have done this, but I’m on a budget!)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">out</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;out.sgy&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;SEGY&#39;</span><span class="p">,</span> <span class="n">data_encoding</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># encode 1 for IBM, 5 for IEEE</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/matt/anaconda/envs/xlines/lib/python3.5/site-packages/obspy/io/segy/core.py:398: UserWarning: CREATING TRACE HEADER
+  warnings.warn(&quot;CREATING TRACE HEADER&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="validate-what-we-did">
+<h2>Validate what we did<a class="headerlink" href="#validate-what-we-did" title="Permalink to this headline">¶</a></h2>
+<p>I figured you might not believe that this did what we wanted… so let’s check the header of the file we just created.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">_read_segy</span><span class="p">(</span><span class="s1">&#39;out.sgy&#39;</span><span class="p">,</span> <span class="n">headonly</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">textual_file_header</span><span class="p">[:</span><span class="mi">15</span><span class="o">*</span><span class="mi">80</span><span class="p">]</span>  <span class="c1"># First 15 lines.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>b&#39;C   CLIENT/JOB ID    0 5 5 5 2 9 3 4 7 2                                        C   LINE  L3X                                                                   C   REEL NO 751023083601   DAY-START OF REEL  23       YEAR 1975                C   INSTRUMENT: MFG TI          MODEL ASC                                       C   DATA TRACES/RECORD0001      AUXILIARY TRACES/RECORD 0       CDP FOLD  0001  C SAMPLE INTERNAL 0000008000 US  SAMPLES/TRACE  0751BITS/IN 1600 BYTES/SAMPLE 4 C   RECORDING FORMAT  STDI              FORMAT THIS REEL SEG Y1                 C   SAMPLE CODE: FLOATING PT                                                    C   GAIN TYPE:   FLOATING PT                                                    C                                                                               Similarity volume.\nGenerated: 18 Sep 2016 by Matt Hall matt@agilegeoscience.com.\nAlgorithm: github.com/agile-geoscience/bruges.attribute.similarity.\nParameters: duration=0.16 s, dt=0.008 s.                                                                                                                                                                                                                   &#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>And the actual trace data:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">data</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">s</span><span class="o">.</span><span class="n">traces</span><span class="p">)</span><span class="o">.</span><span class="n">T</span><span class="p">,</span>
+           <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">,</span>
+           <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/01_Read_and_write_SEG-Y_46_0.png" src="_images/01_Read_and_write_SEG-Y_46_0.png" />
+</div>
+</div>
+<hr />
+<div>
+<img src="https://avatars1.githubusercontent.com/u/1692321?s=50"><p style="text-align:center">© Agile Geoscience 2016</p>
+</div></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book Community<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

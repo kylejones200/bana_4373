@@ -1,0 +1,1251 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summary &#8212; My sample book</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Getting to know Pandas" href="PyFi%203%20-%20Intermediate%20Data%20Analysis%20with%20Pandas.html" />
+    <link rel="prev" title="Summary" href="PyFi%201%20-%20Python%20Basics.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="PyFi%20-%20Welcome%20to%20PyFi.html">
+   Course introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PyFi%200%20-%20Intro%20to%20Jupyter%20notebooks.html">
+   Jupyter Notebook App
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PyFi%201%20-%20Python%20Basics.html">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PyFi%203%20-%20Intermediate%20Data%20Analysis%20with%20Pandas.html">
+   Getting to know Pandas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PyFi%204%20-%20Data%20wrangling%20using%20data%20from%20AirBNB%20Toronto.html">
+   Analysis in practice
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PyFi%205-%20Interacting%20with%20Excel%20using%20Openpyxl%20and%20Pandas.html">
+   Interacting with Excel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PyFi%207%20-%20Getting%20stock%20price%20data%20with%20an%20API.html">
+   Summary - Web Scraping and APIs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="PyFi%208%20-%20Monte%20Carlo%20Simulation%20for%20option%20pricing.html">
+   Summary
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Intro to Python/PyFi 2 - Basic Data Analysis with Pandas.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FIntro to Python/PyFi 2 - Basic Data Analysis with Pandas.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Intro to Python/PyFi 2 - Basic Data Analysis with Pandas.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Summary
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tutorial-overview">
+   Tutorial Overview
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pandas-basics">
+   Pandas basics
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#read-a-text-file-into-pandas-as-a-dataframe-and-explore-the-data">
+     Read a text file into Pandas as a DataFrame and explore the data
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercise-what-do-these-dataframe-methods-do-try-them-out">
+       Exercise: What do these DataFrame methods do? Try them out.
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h4 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#mini-exercise-add-the-asp-as-calculated-above-to-the-sales-dataframe-as-a-series-called-asp">
+         Mini exercise: add the ASP, as calculated above, to the sales dataframe as a series called asp
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#filtering-with-row-conditions">
+     Filtering with row conditions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercise-filter-the-sales-df-for-halloween-i-e-order-day-is-2017-10-31-and-for-the-consumables-product-family">
+       Exercise: Filter the sales df for Halloween (i.e. order_day is ‘2017-10-31’), and for the Consumables product_family
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basic-visualizations">
+     Basic visualizations
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exercise-what-other-kinds-of-plots-can-pandas-produce-try-making-a-few-below">
+       Exercise: what other kinds of plots can Pandas produce? Try making a few below.
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exporting-data">
+     Exporting Data
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises-your-turn">
+   Exercises: Your turn!
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extensions">
+   Extensions
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#further-reading">
+   Further Reading
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#books">
+     Books
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#apis">
+     APIs
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-pandas-tutorials">
+     Additional Pandas Tutorials
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Summary
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next">
+   Next
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="summary">
+<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h1>
+<p>Python can be used to create websites, automate tasks, and do numerical analysis. The Python library that is most often used for analysis is called Pandas (short for Panel Analysis).</p>
+<p>After completing this tutorial, you will know:</p>
+<ul class="simple">
+<li><p>How to use Pandas DataFrames to open *.csv and *.xlsx files</p></li>
+<li><p>How to apply functions to DataFrames to calcuate the mean and standard deviation</p></li>
+<li><p>How to make basic plots</p></li>
+</ul>
+<p>Let’s get started.</p>
+</div>
+<div class="section" id="tutorial-overview">
+<h1>Tutorial Overview<a class="headerlink" href="#tutorial-overview" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial is divided into 2 parts:</p>
+<ol class="simple">
+<li><p>Pandas basics</p></li>
+<li><p>Exercises: Your turn!</p></li>
+</ol>
+</div>
+<div class="section" id="pandas-basics">
+<h1>Pandas basics<a class="headerlink" href="#pandas-basics" title="Permalink to this headline">¶</a></h1>
+<p><strong>Pandas</strong> is all about <strong>DataFrames</strong> (df), which are analogous to tables in Excel or SQL, or to R’s data.frame.  Dataframes are made up of <strong>Series</strong> (i.e. columns) and can be manipulated with simple or complex transformations like filtering, aggregating, joining, and pivoting/unpivoting.</p>
+<div class="section" id="read-a-text-file-into-pandas-as-a-dataframe-and-explore-the-data">
+<h2>Read a text file into Pandas as a DataFrame and explore the data<a class="headerlink" href="#read-a-text-file-into-pandas-as-a-dataframe-and-explore-the-data" title="Permalink to this headline">¶</a></h2>
+<p>We’ll import a sample data set with daily sales in the US marketplace for 2017, grouped by GL and including a column for product family (big4).  To read the text file into memory, we provide the path to the file.  You only need to provide the path relative to the folder that contains your code.  For example, this Jupyter notebook is in a folder called Workbooks.  So when we specify the path as ‘Support_Files/sales_fake.txt’, Pandas will look for the file called sales_fake.txt inside Workbooks/Support_Files/.  Alternatively, you can always hard code the entire path (e.g. ‘C:/some_folder/some_subfolder/sales_fake.txt’) if you are unsure how to use relative paths.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read data into Python from .txt</span>
+<span class="n">sales</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/sales_fake.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># View the first 10 rows of the dataframe (see also: tail)</span>
+<span class="n">sales</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>marketplace_id</th>
+      <th>order_day</th>
+      <th>order_week</th>
+      <th>gl</th>
+      <th>product_family</th>
+      <th>units</th>
+      <th>ops</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>2017-01-01</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>9460.696331</td>
+      <td>46576.224274</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>2017-01-02</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>13828.318507</td>
+      <td>61148.434296</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>2017-01-03</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>12308.348366</td>
+      <td>59960.632711</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>2017-01-04</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>11912.807101</td>
+      <td>58991.544654</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1</td>
+      <td>2017-01-05</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>10817.883315</td>
+      <td>54032.017658</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1</td>
+      <td>2017-01-06</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>10585.850959</td>
+      <td>51928.496274</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1</td>
+      <td>2017-01-07</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>12170.592881</td>
+      <td>61172.924939</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>1</td>
+      <td>2017-01-08</td>
+      <td>2017-01-14</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>14468.694255</td>
+      <td>63383.543121</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1</td>
+      <td>2017-01-09</td>
+      <td>2017-01-14</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>12385.589620</td>
+      <td>58211.500811</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1</td>
+      <td>2017-01-10</td>
+      <td>2017-01-14</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>10700.052752</td>
+      <td>52852.624223</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="section" id="exercise-what-do-these-dataframe-methods-do-try-them-out">
+<h3>Exercise: What do these DataFrame methods do? Try them out.<a class="headerlink" href="#exercise-what-do-these-dataframe-methods-do-try-them-out" title="Permalink to this headline">¶</a></h3>
+<p>The .head() <strong>method</strong> above is just one of the many methods that can be applied to Pandas dataframes. In general, these methods return some transformation of the dataframe to which they are applied. Take a few minutes and play around with some of the methods below, using the sales dataframe.</p>
+<p>See <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html">https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html</a> under “Methods” for a complete list.</p>
+<p>Some useful methods:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.count()  .describe()  .info()  .mean()  .median()  .nunique()  .plot()  .shift()  .transpose()
+</pre></div>
+</div>
+<p>Dataframes also have certain <strong>attributes</strong> which are accessed similarly, but without the ().  What do these attributes represent?</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.columns  .dtypes  .empty  .shape  .size  .values
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### CODE FOR ABOVE EXERCISE ###</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Select just a single column (i.e. Series object) from a dataframe:</span>
+<span class="n">sales</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0         9460.696331
+1        13828.318507
+2        12308.348366
+3        11912.807101
+4        10817.883315
+             ...     
+20600     2662.391432
+20601     2764.977243
+20602     3170.902842
+20603     3108.060954
+20604     1354.866306
+Name: units, Length: 20605, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># The above series isn&#39;t very useful by itself, since we lose the date information.  To select a subset of columns, pass in a list of columns:</span>
+<span class="n">col_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;order_day&#39;</span><span class="p">,</span> <span class="s1">&#39;gl&#39;</span><span class="p">,</span> <span class="s1">&#39;ops&#39;</span><span class="p">]</span>
+<span class="n">sales</span><span class="p">[</span><span class="n">col_list</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="c1"># Or equivalently:</span>
+<span class="n">sales</span><span class="p">[[</span><span class="s1">&#39;order_day&#39;</span><span class="p">,</span> <span class="s1">&#39;gl&#39;</span><span class="p">,</span> <span class="s1">&#39;ops&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>order_day</th>
+      <th>gl</th>
+      <th>ops</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>2017-01-01</td>
+      <td>Amazon_Pantry</td>
+      <td>46576.224274</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2017-01-02</td>
+      <td>Amazon_Pantry</td>
+      <td>61148.434296</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2017-01-03</td>
+      <td>Amazon_Pantry</td>
+      <td>59960.632711</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2017-01-04</td>
+      <td>Amazon_Pantry</td>
+      <td>58991.544654</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2017-01-05</td>
+      <td>Amazon_Pantry</td>
+      <td>54032.017658</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># What are all the unique product families? use unique() on a single series:</span>
+<span class="n">sales</span><span class="p">[</span><span class="s1">&#39;product_family&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Consumables&#39;, &#39;Softlines&#39;, &#39;Hardlines&#39;, &#39;Media&#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Or get the count of observations from each product family.  Note that the .value_counts() method only works if applied to a Series - not a DataFrame.  </span>
+<span class="c1"># What happens if you try to call .value_counts() on a DataFrame?</span>
+<span class="n">sales</span><span class="p">[</span><span class="s1">&#39;product_family&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hardlines      10608
+Consumables     5455
+Media           2582
+Softlines       1960
+Name: product_family, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print the total sales for the year.  The .sum() method works on both Series and DataFrames.</span>
+<span class="n">sales</span><span class="p">[</span><span class="s1">&#39;ops&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5441037303.093659
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Operations on the series that make up a dataframe generally work as you&#39;d expect.</span>
+
+<span class="c1"># E.g. add a column for country</span>
+<span class="n">sales</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;US&#39;</span>
+
+<span class="n">sales</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>marketplace_id</th>
+      <th>order_day</th>
+      <th>order_week</th>
+      <th>gl</th>
+      <th>product_family</th>
+      <th>units</th>
+      <th>ops</th>
+      <th>country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>2017-01-01</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>9460.696331</td>
+      <td>46576.224274</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>2017-01-02</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>13828.318507</td>
+      <td>61148.434296</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>2017-01-03</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>12308.348366</td>
+      <td>59960.632711</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>2017-01-04</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>11912.807101</td>
+      <td>58991.544654</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1</td>
+      <td>2017-01-05</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>10817.883315</td>
+      <td>54032.017658</td>
+      <td>US</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Adding calculated columns is easy, too.  First, calculate the ASP and print the results:</span>
+<span class="n">sales</span><span class="p">[</span><span class="s1">&#39;ops&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">sales</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0        4.923129
+1        4.421972
+2        4.871542
+3        4.951943
+4        4.994694
+           ...   
+20600    2.381879
+20601    2.230902
+20602    2.216904
+20603    2.073844
+20604    2.313887
+Length: 20605, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="mini-exercise-add-the-asp-as-calculated-above-to-the-sales-dataframe-as-a-series-called-asp">
+<h4>Mini exercise: add the ASP, as calculated above, to the sales dataframe as a series called asp<a class="headerlink" href="#mini-exercise-add-the-asp-as-calculated-above-to-the-sales-dataframe-as-a-series-called-asp" title="Permalink to this headline">¶</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### CODE FOR ABOVE EXERCISE ###</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="filtering-with-row-conditions">
+<h2>Filtering with row conditions<a class="headerlink" href="#filtering-with-row-conditions" title="Permalink to this headline">¶</a></h2>
+<p>The .loc() method is highly useful for filtering dfs.  You can think of the condition(s) inside .loc as being roughly equivalent to the “ifs” in Excel’s sumifs function, or the conditions in a WHERE clause in SQL.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filter only for the pantry GL and name this view pantry:</span>
+<span class="n">pantry</span> <span class="o">=</span> <span class="n">sales</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">sales</span><span class="p">[</span><span class="s1">&#39;gl&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Amazon_Pantry&#39;</span><span class="p">]</span>
+<span class="n">pantry</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>marketplace_id</th>
+      <th>order_day</th>
+      <th>order_week</th>
+      <th>gl</th>
+      <th>product_family</th>
+      <th>units</th>
+      <th>ops</th>
+      <th>country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>1</td>
+      <td>2017-01-01</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>9460.696331</td>
+      <td>46576.224274</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>2017-01-02</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>13828.318507</td>
+      <td>61148.434296</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>2017-01-03</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>12308.348366</td>
+      <td>59960.632711</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>2017-01-04</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>11912.807101</td>
+      <td>58991.544654</td>
+      <td>US</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1</td>
+      <td>2017-01-05</td>
+      <td>2017-01-07</td>
+      <td>Amazon_Pantry</td>
+      <td>Consumables</td>
+      <td>10817.883315</td>
+      <td>54032.017658</td>
+      <td>US</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># to add multiple conditions, wrap each condition in () and combine them together with &amp;</span>
+
+<span class="n">sales</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">sales</span><span class="p">[</span><span class="s1">&#39;order_day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;2017-07-01&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">sales</span><span class="p">[</span><span class="s1">&#39;gl&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Apparel&#39;</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>marketplace_id</th>
+      <th>order_day</th>
+      <th>order_week</th>
+      <th>gl</th>
+      <th>product_family</th>
+      <th>units</th>
+      <th>ops</th>
+      <th>country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>546</td>
+      <td>1</td>
+      <td>2017-07-01</td>
+      <td>2017-07-01</td>
+      <td>Apparel</td>
+      <td>Softlines</td>
+      <td>28386.369567</td>
+      <td>561085.865088</td>
+      <td>US</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="section" id="exercise-filter-the-sales-df-for-halloween-i-e-order-day-is-2017-10-31-and-for-the-consumables-product-family">
+<h3>Exercise: Filter the sales df for Halloween (i.e. order_day is ‘2017-10-31’), and for the Consumables product_family<a class="headerlink" href="#exercise-filter-the-sales-df-for-halloween-i-e-order-day-is-2017-10-31-and-for-the-consumables-product-family" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### CODE FOR ABOVE EXERCISE ###</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="basic-visualizations">
+<h2>Basic visualizations<a class="headerlink" href="#basic-visualizations" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># In the background, Pandas uses a Python package called matplotlib to make plotting convenient.</span>
+<span class="c1"># Since our toys df is indexed on date, Pandas automatically treats date as the x-axis.</span>
+
+<span class="n">toys</span> <span class="o">=</span> <span class="n">sales</span><span class="p">[</span><span class="n">sales</span><span class="p">[</span><span class="s1">&#39;gl&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Toys&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">toys</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;order_day&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">toys</span><span class="p">[</span><span class="s1">&#39;ops&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11f410e50&gt;
+</pre></div>
+</div>
+<img alt="../_images/PyFi 2 - Basic Data Analysis with Pandas_26_1.png" src="../_images/PyFi 2 - Basic Data Analysis with Pandas_26_1.png" />
+</div>
+</div>
+<div class="section" id="exercise-what-other-kinds-of-plots-can-pandas-produce-try-making-a-few-below">
+<h3>Exercise: what other kinds of plots can Pandas produce? Try making a few below.<a class="headerlink" href="#exercise-what-other-kinds-of-plots-can-pandas-produce-try-making-a-few-below" title="Permalink to this headline">¶</a></h3>
+<p>Check out the API documentation for the pd.Series.plot method to find other allowable values of the “kind” argument:</p>
+<p><a class="reference external" href="http://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.Series.plot.html">http://pandas.pydata.org/pandas-docs/version/0.22/generated/pandas.Series.plot.html</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### CODE FOR ABOVE EXERCISE ###</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Or we can plot multiple metrics with a shared axis using subplots=True.</span>
+<span class="c1"># With a single line of code, Pandas can create detailed visualizations</span>
+<span class="n">toys</span><span class="p">[</span><span class="s1">&#39;asp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">toys</span><span class="p">[</span><span class="s1">&#39;ops&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">toys</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span>
+<span class="n">toys</span><span class="p">[[</span><span class="s1">&#39;units&#39;</span><span class="p">,</span> <span class="s1">&#39;ops&#39;</span><span class="p">,</span> <span class="s1">&#39;asp&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">subplots</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&lt;matplotlib.axes._subplots.AxesSubplot object at 0x11e3e6d90&gt;,
+       &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ef40a50&gt;,
+       &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ee7df50&gt;],
+      dtype=object)
+</pre></div>
+</div>
+<img alt="../_images/PyFi 2 - Basic Data Analysis with Pandas_29_1.png" src="../_images/PyFi 2 - Basic Data Analysis with Pandas_29_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Histograms are simple to create</span>
+
+<span class="n">toys</span><span class="p">[</span><span class="s1">&#39;units&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.axes._subplots.AxesSubplot at 0x12f108750&gt;
+</pre></div>
+</div>
+<img alt="../_images/PyFi 2 - Basic Data Analysis with Pandas_30_1.png" src="../_images/PyFi 2 - Basic Data Analysis with Pandas_30_1.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exporting-data">
+<h2>Exporting Data<a class="headerlink" href="#exporting-data" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If you want to export a DataFrame back to a text file, the syntax to do this is similar to pd.read_csv().</span>
+<span class="c1"># First, define the path / location where you want the file to be saved (including the filename):</span>
+
+<span class="n">path_to_save_data</span> <span class="o">=</span> <span class="s1">&#39;data/sales_fake_output.csv&#39;</span>
+
+<span class="n">sales</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">path_to_save_data</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sometimes you might want to quickly look at the data in Excel.  </span>
+<span class="c1"># Add it to the clipboard and paste it wherever you want!</span>
+
+<span class="n">sales</span><span class="o">.</span><span class="n">to_clipboard</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sales</span><span class="o">.</span><span class="n">gl</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Amazon_Pantry&#39;, &#39;Apparel&#39;, &#39;Art&#39;, &#39;Art and Craft Supplies&#39;,
+       &#39;Automotive&#39;, &#39;Baby&#39;, &#39;Beauty&#39;, &#39;Biss&#39;, &#39;Books&#39;, &#39;Camera&#39;,
+       &#39;Consumables_Email_Gift_Cards&#39;, &#39;Consumables_Physical_Gift_Cards&#39;,
+       &#39;Electronics&#39;, &#39;Entertainment Collectibles&#39;, &#39;Food and Beverage&#39;,
+       &#39;Furniture&#39;, &#39;GUILD&#39;, &#39;Gift Card&#39;, &#39;Gourmet&#39;, &#39;Grocery&#39;,
+       &#39;Health &amp; Personal Care&#39;, &#39;Home&#39;, &#39;Home Entertainment&#39;,
+       &#39;Home Improvement&#39;, &#39;Jewelry&#39;, &#39;Kitchen&#39;, &#39;Lawn and Garden&#39;,
+       &#39;Loose Stones&#39;, &#39;Luggage&#39;, &#39;Luxury Beauty&#39;, &#39;Magazines&#39;,
+       &#39;Major Appliances&#39;, &#39;Misc SDP&#39;, &#39;Mobile_Electronics&#39;, &#39;Music&#39;,
+       &#39;Musical Instruments&#39;, &#39;Office Products&#39;, &#39;Outdoors&#39;, &#39;PC&#39;,
+       &#39;Personal_Care_Appliances&#39;, &#39;Pet Products&#39;, &#39;Prescription_Drugs&#39;,
+       &#39;Prescription_Eyewear&#39;, &#39;Shoes&#39;, &#39;Softlines Private Label&#39;,
+       &#39;Software&#39;, &#39;Sports&#39;, &#39;Sports Memorabilia&#39;, &#39;Tires&#39;, &#39;Tools&#39;,
+       &#39;Toys&#39;, &#39;Universal&#39;, &#39;VALUE_ADDED_SERVICES&#39;, &#39;Video&#39;, &#39;Video DVD&#39;,
+       &#39;Video Games&#39;, &#39;Watches&#39;, &#39;Wine&#39;, &#39;Wireless&#39;, &#39;Wireless_Accessory&#39;,
+       &#39;gl_fresh_ambient&#39;, &#39;gl_fresh_perishable&#39;, &#39;gl_fresh_prepared&#39;,
+       &#39;gl_fresh_produce&#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="exercises-your-turn">
+<h1>Exercises: Your turn!<a class="headerlink" href="#exercises-your-turn" title="Permalink to this headline">¶</a></h1>
+<p>Use the sales DataFrame to answer the following questions.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># First read in the data</span>
+<span class="n">sales</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;data/sales_fake.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="simple">
+<li><p>What is the total OPS from all rows?</p></li>
+</ol>
+<ol class="simple">
+<li><p>Display the top 5 rows of the Apparel GL</p></li>
+</ol>
+<ol class="simple">
+<li><p>Plot a line graph of the Apparel units by day</p></li>
+</ol>
+<ol class="simple">
+<li><p>How many unique GLs are there?</p></li>
+</ol>
+<ol class="simple">
+<li><p>Filter dataset for only Pet Products. Plot one graph with a line for each of units, ops and asp by day</p></li>
+</ol>
+<ol class="simple">
+<li><p>Create a new dataframe called “last_day” that contains only rows from the last order_day in the dataset</p></li>
+</ol>
+<ol class="simple">
+<li><p>Output the result above to an excel file called “test_output.xlsx”</p></li>
+</ol>
+</div>
+<div class="section" id="extensions">
+<h1>Extensions<a class="headerlink" href="#extensions" title="Permalink to this headline">¶</a></h1>
+<p>This section lists some ideas for extending the tutorial that you may wish to explore.</p>
+<ul class="simple">
+<li><p>Describe three examples when Pandas would be better than using Excel.</p></li>
+<li><p>Complete the next example that uses Pandas to import and visualize a dataset.</p></li>
+</ul>
+</div>
+<div class="section" id="further-reading">
+<h1>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline">¶</a></h1>
+<p>This section provides more resources on the topic if you are looking to go deeper.</p>
+<div class="section" id="books">
+<h2>Books<a class="headerlink" href="#books" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Python for Data Analysis, by William McKinney. <a class="reference external" href="http://shop.oreilly.com/product/0636920023784.do">http://shop.oreilly.com/product/0636920023784.do</a></p></li>
+</ul>
+</div>
+<div class="section" id="apis">
+<h2>APIs<a class="headerlink" href="#apis" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Pandas. <a class="reference external" href="https://pandas.pydata.org/">https://pandas.pydata.org/</a></p></li>
+</ul>
+</div>
+<div class="section" id="additional-pandas-tutorials">
+<h2>Additional Pandas Tutorials<a class="headerlink" href="#additional-pandas-tutorials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/QuantEcon/lecture-python-programming.notebooks/blob/master/pandas.ipynb">Python for Quantitative Economics</a></p></li>
+<li><p><a class="reference external" href="https://github.com/kthyng/python4geosciences/blob/master/materials/4_pandas.ipynb">Intro to Pandas</a> from Python for Geosciences</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id1">
+<h1>Summary<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>In this tutorial, you were introduced to the Pandas library. Specifically, you learned:</p>
+<ul class="simple">
+<li><p>How to use Pandas DataFrames to open *.csv and *.xlsx files</p></li>
+<li><p>How to apply functions to DataFrames to calcuate the mean and standard deviation</p></li>
+<li><p>How to make basic plots</p></li>
+</ul>
+</div>
+<div class="section" id="next">
+<h1>Next<a class="headerlink" href="#next" title="Permalink to this headline">¶</a></h1>
+<p>In the next section, you will use Pandas to import and work with data.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Intro to Python"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="PyFi%201%20-%20Python%20Basics.html" title="previous page">Summary</a>
+    <a class='right-next' id="next-link" href="PyFi%203%20-%20Intermediate%20Data%20Analysis%20with%20Pandas.html" title="next page">Getting to know Pandas</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book Community<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
