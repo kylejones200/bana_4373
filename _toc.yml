@@ -2,16 +2,16 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
-chapters:
-- file: Getting Started/_index
-- file: Intro to Python/PyFi - Welcome to PyFi.ipynb
-- file: Intro to Python/PyFi 0 - Intro to Jupyter notebooks.ipynb
-- file: Intro to Python/PyFi 1 - Python Basics.ipynb
-- file: Intro to Python/PyFi 2 - Basic Data Analysis with Pandas.ipynb
-- file: Intro to Python/PyFi 3 - Intermediate Data Analysis with Pandas.ipynb
-- file: Intro to Python/PyFi 4 - Data wrangling using data from AirBNB Toronto.ipynb
-- file: Intro to Python/PyFi 5- Interacting with Excel using Openpyxl and Pandas.ipynb
-#- file: Intro to Python/PyFi 6 - Merging PDFs using PyPDF2.ipynb
-- file: Intro to Python/PyFi 7 - Getting stock price data with an API.ipynb
-- file: Intro to Python/PyFi 8 - Monte Carlo Simulation for option pricing.ipynb
+root: index
+parts:
+  - caption: Review
+    chapters:
+    - file: Getting Started/*
+  - caption: Applied Analytics
+    chapters:
+    - file: Intro to Python/*
+    - file: Data Analytics/*
+  - caption: Examples
+      chapters:
+    - file: time series/*
+    - file: Toy problems/*
