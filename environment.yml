@@ -15,4 +15,5 @@ dependencies:
     - plotly
     - keras==2.1.2
     - tensorflow==1.14
+    - pystan==2.19.1.1
     - fbprophet
