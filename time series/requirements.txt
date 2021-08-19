@@ -1,0 +1,8 @@
+pandas
+matplotlib
+plotly
+fbprophet
+scipy
+sklearn
+seaborn
+numpy
