@@ -6,3 +6,4 @@ plotly
 statsmodels
 openpyxl
 PyPDF2
+statsmodels
