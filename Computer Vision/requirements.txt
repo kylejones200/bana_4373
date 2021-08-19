@@ -2,4 +2,4 @@ keras==2.1.2
 tensorflow==1.14
 imageai
 wget
-cv2
+opencv-python
