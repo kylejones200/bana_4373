@@ -1,7 +1,6 @@
 pandas
 numpy
 matplotlib
-mpl_toolkits
 scipy
 plotly
 lifelines

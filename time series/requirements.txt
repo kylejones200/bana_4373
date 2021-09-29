@@ -1,8 +1,11 @@
 pandas
+numpy
+scipy
 matplotlib
 plotly
-fbprophet
-scipy
+pystan<3
+prophet
 sklearn
 seaborn
-numpy
+pandas_datareader
+dyplot
