@@ -18,3 +18,7 @@ dependencies:
     - tensorflow==1.14
     - statsmodels
     - seaborn
+    - convertdate
+    - pystan<3
+    - prophet
+    - pandas_datareader
