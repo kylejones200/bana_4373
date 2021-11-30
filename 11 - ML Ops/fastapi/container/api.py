@@ -13,7 +13,7 @@ api = FastAPI()
 
 # Loading in model from serialized .pkl file
 pkl_filename = "../model/model.pkl"
-clf = joblib(pkl_filename)
+clf = joblib.load(pkl_filename)
 
 # Creating the data model for data validation
 class CLF(BaseModel):
